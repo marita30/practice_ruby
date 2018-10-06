@@ -1,0 +1,121 @@
+.F.FFF
+
+Failures:
+
+  1) Q1. FizzBuzz to 20 has acceptable code quality
+     Failure/Error: expect(code_quality.acceptable?).to(eq(true), code_quality.problems)
+
+       Inspecting 1 file
+       C
+
+       Offenses:
+
+       questions/question_1.rb:12:1: C: Layout/IndentationWidth: Use 2 (not 6) spaces for indentation.
+             if i % 5 == 0 and i % 3 == 0
+       ^^^^^^
+
+       1 file inspected, 1 offense detected
+     # ./spec/question_1_spec.rb:32:in `block (2 levels) in <top (required)>'
+
+  2) Q2. Sum integers has acceptable code quality
+     Failure/Error: expect(code_quality.acceptable?).to(eq(true), code_quality.problems)
+
+       Inspecting 1 file
+       C
+
+       Offenses:
+
+       questions/question_2.rb:5:1: C: Layout/IndentationWidth: Use 2 (not 0) spaces for indentation.
+       total += i
+
+
+       1 file inspected, 1 offense detected
+     # ./spec/question_2_spec.rb:13:in `block (2 levels) in <top (required)>'
+
+  3) Q3. Fibonacci sequence `puts`es first 20 Fibonacci numbers
+     Failure/Error:
+       expect { load "questions/question_3.rb" }
+         .to output(/#{expected}$/).to_stdout
+
+       expected block to output /0
+       1
+       1
+       2
+       3
+       5
+       8
+       13
+       21
+       34
+       55
+       89
+       144
+       233
+       377
+       610
+       987
+       1597
+       2584
+       4181$/ to stdout, but output "0\n1\n1\n2\n3\n5\n8\n13\n"
+       Diff:
+       @@ -1,4 +1,4 @@
+       -/0
+       +0
+        1
+        1
+        2
+       @@ -6,16 +6,4 @@
+        5
+        8
+        13
+       -21
+       -34
+       -55
+       -89
+       -144
+       -233
+       -377
+       -610
+       -987
+       -1597
+       -2584
+       -4181$/
+     # ./spec/question_3_spec.rb:26:in `block (2 levels) in <top (required)>'
+
+  4) Q3. Fibonacci sequence has acceptable code quality
+     Failure/Error: expect(code_quality.acceptable?).to(eq(true), code_quality.problems)
+
+       Inspecting 1 file
+       C
+
+       Offenses:
+
+       questions/question_3.rb:12:1: C: Layout/IndentationConsistency: Inconsistent indentation detected.
+       puts a
+       ^^^^^^
+       questions/question_3.rb:13:3: C: Layout/IndentationConsistency: Inconsistent indentation detected.
+         while b < 20 do ...
+         ^^^^^^^^^^^^^^^
+       questions/question_3.rb:16:6: C: Layout/SpaceAfterComma: Space missing after comma.
+           a,b = b,a+b
+            ^
+       questions/question_3.rb:16:12: C: Layout/SpaceAfterComma: Space missing after comma.
+           a,b = b,a+b
+                  ^
+       questions/question_3.rb:16:14: C: Layout/SpaceAroundOperators: Surrounding space missing for operator +.
+           a,b = b,a+b
+                    ^
+
+       1 file inspected, 5 offenses detected
+     # ./spec/question_3_spec.rb:32:in `block (2 levels) in <top (required)>'
+
+Finished in 4.76 seconds (files took 0.12935 seconds to load)
+6 examples, 4 failures
+
+Failed examples:
+
+rspec ./spec/question_1_spec.rb:30 # Q1. FizzBuzz to 20 has acceptable code quality
+rspec ./spec/question_2_spec.rb:11 # Q2. Sum integers has acceptable code quality
+rspec ./spec/question_3_spec.rb:25 # Q3. Fibonacci sequence `puts`es first 20 Fibonacci numbers
+rspec ./spec/question_3_spec.rb:30 # Q3. Fibonacci sequence has acceptable code quality
+
