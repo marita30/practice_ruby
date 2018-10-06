@@ -9,7 +9,6 @@
 
  a = 0
  b = 1
-puts a
   while b < 20 do
     puts b
 
