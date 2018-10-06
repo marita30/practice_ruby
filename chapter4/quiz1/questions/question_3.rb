@@ -7,3 +7,11 @@
 #     number is the result of `0 + 1`.
 # * `puts`es these numbers, one per line.
 
+ a = 0
+ b = 1
+puts a
+  while b < 20 do
+    puts b
+
+    a,b = b,a+b
+  end
