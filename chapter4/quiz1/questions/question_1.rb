@@ -10,12 +10,16 @@
 
 for i in 1..20
       if i % 5 == 0 && i % 3 == 0
-        puts "FizzBuzz"
+      	i = "FizzBuzz"
+        puts i
       elsif i % 5 == 0
-        puts "Buzz"
+      	i = "Buzz"
+        puts i
       elsif i % 3 == 0
-        puts "Fizz"
+        i = "Fizz"
+        puts i
       else
+      	i = i
         puts i
       end
     end

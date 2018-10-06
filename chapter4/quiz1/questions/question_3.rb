@@ -9,8 +9,10 @@
 
  a = 0
  b = 1
-  while b < 20 do
-    puts b
+
+for i in 1..20
+
+   puts b
 
     a,b = b,a+b
-  end
+end
