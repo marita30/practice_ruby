@@ -7,12 +7,12 @@
 #     number is the result of `0 + 1`.
 # * `puts`es these numbers, one per line.
 
- a = 0
- b = 1
-
-for i in 1..20
-
-   puts b
-
-    a,b = b,a+b
+a = 0
+b = 1
+i = 1
+puts a
+while i <= 19
+		puts b
+		a, b = b, a + b
+		i = i + 1
 end

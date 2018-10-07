@@ -2,6 +2,6 @@
 # `250` (inclusive) and `puts`es the total.
 total = 0
 for i in 1..250
-total =  total + i
+		total = total + i
 end
 puts total

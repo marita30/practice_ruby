@@ -9,17 +9,14 @@
 # * `puts`es these "FizzBuzz sequence" entries, one per line.
 
 for i in 1..20
-      if i % 5 == 0 && i % 3 == 0
-      	i = "FizzBuzz"
-        puts i
-      elsif i % 5 == 0
-      	i = "Buzz"
-        puts i
-      elsif i % 3 == 0
-        i = "Fizz"
-        puts i
-      else
-      	i = i
-        puts i
-      end
-    end
+  if ((i % 5 == 0) && (i % 3 == 0))
+    i = 'FizzBuzz'
+  elsif i % 5 == 0
+    i = 'Buzz'
+  elsif i % 3 == 0
+    i = 'Fizz'
+  else
+    i = i
+  end
+  puts i
+end
