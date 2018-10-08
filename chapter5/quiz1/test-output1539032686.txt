@@ -1,0 +1,26 @@
+.F
+
+Failures:
+
+  1) Q1. Magic 8 ball has acceptable code quality
+     Failure/Error: expect(code_quality.acceptable?).to(eq(true), code_quality.problems)
+
+       Inspecting 1 file
+       C
+
+       Offenses:
+
+       questions/question_1.rb:16:101: C: Metrics/LineLength: Line is too long. [108/100]
+       arreglo = ["It is certain", "It is decidedly so", "Ask again later", "Outlook not so good", "Very doubtful"]
+                                                                                                           ^^^^^^^^
+
+       1 file inspected, 1 offense detected
+     # ./spec/question_1_spec.rb:19:in `block (2 levels) in <top (required)>'
+
+Finished in 2.89 seconds (files took 0.20911 seconds to load)
+2 examples, 1 failure
+
+Failed examples:
+
+rspec ./spec/question_1_spec.rb:17 # Q1. Magic 8 ball has acceptable code quality
+
