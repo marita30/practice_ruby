@@ -13,6 +13,6 @@
 #   Ask again later
 #   $ ruby question_1.rb
 #   It is certain
-arreglo = ["It is certain", "It is decidedly so", "Ask again later", "Outlook not so good", "Very doubtful"]
+arreglo = ["It is decidedly so", "Ask again later", "Outlook not so good", "Very doubtful"]
 puts arreglo.sample
 
