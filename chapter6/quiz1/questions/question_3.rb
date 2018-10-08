@@ -22,4 +22,20 @@
 #   the user input.  You shouldn't need to enter any input manually.
 #   If the tests hang when you run them, it probably means your code
 #   doesn't work correctly, yet.
-
+loop do
+	puts "Choose between south or north!"
+	option = gets.chomp.downcase
+	if option == 'north'
+		puts "You are in a scare cave"
+	elsif option == 'south'
+		puts "You are in a scary passage"
+		puts "Choose between south or north!"
+		option2 = gets.chomp.downcase
+		if option2 == 'north'
+			puts "You walk into sunlight"
+			break
+		else 
+			
+		end
+	end
+end

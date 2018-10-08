@@ -19,4 +19,25 @@
 #
 # * Note: You can assume the players will only ever input `rock`,
 #   `paper` or `scissors`.
+puts "Player 1: Give me your move (rock, paper, scissors?):"
+uno = gets.chomp.downcase
+puts "Player 2: Give me your move: (rock, paper, scissors?)"
+dos = gets.chomp.downcase
+
+if uno == 'rock' and dos == 'scissors'
+		puts "Player 1 wins"
+elsif dos == 'rock' and uno == 'scissors'
+		puts "Player 2 wins"
+elsif uno == 'paper' and dos == 'rock'
+		puts "Player 1 wins"
+elsif dos == 'paper' and uno == 'rock'
+		puts "Player 2 wins"
+elsif uno == 'scissors' and dos == 'paper'
+		puts "Player 1 wins"
+elsif dos == 'scissors' and uno == 'paper'
+		puts "Player 2 wins"
+else
+		puts "It's a draw"
+		
+end
 

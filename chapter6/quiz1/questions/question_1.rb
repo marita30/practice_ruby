@@ -26,4 +26,13 @@
 
 # * Note: You can assume that the user will always enter either an
 #   integer or `stop`.
-
+i = 0
+numeros = []
+while i != "stop" do
+		puts "Give me a number"
+		i = gets.chomp.downcase
+		numeros << i.to_i
+end
+total = 0
+numeros.each { |x| total = total + x }
+puts total

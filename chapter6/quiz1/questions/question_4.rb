@@ -33,4 +33,58 @@
 #   the user input.  You shouldn't need to enter any input manually.
 #   If the tests hang when you run them, it probably means your code
 #   doesn't work correctly, yet.
+loop do
+#User starts in HALL
+	puts "Choose between look or north!"
+	option = gets.chomp.downcase
+	if option == 'look'
+		puts "You are standing in an hall with a marble floor. You see a door."
+		puts "Choose between look or north!"
+		option = gets.chomp.downcase
+		if option == 'north'
+			puts "Move to the study"
+			puts "Choose between look or north!"
+			option = gets.chomp.downcase
+			if option == 'look'
+				puts "You are in a warm and cosy study. You see a safe. You see a desk."
+				puts "Choose between look at desk or north!"
+				option = gets.chomp.downcase
+				if option == 'look at desk'
+					puts "You see a piece of paper that reads, The combination is 2451."
+					puts "Choose between south or north! or put combination number!"
+					option = gets.chomp.downcase
+					if option == '2451'
+						puts "You see some diamonds in the safe, pick them up and make your escape"
+						break
+					elsif option == 'quit'
+						puts "Bye!"
+						break
+					else
+						puts "Move to hall!"
+					end
+				elsif option == 'quit'
+					puts "Bye!"
+					break
+				else						
+					
+				end
+			elsif option == 'quit'
+				puts "Bye!"
+				break
+			else	
+				
+			end
+		elsif option == 'quit'
+			puts "Bye!"
+			break
+		else	
+
+		end
+	elsif option == 'quit'
+		puts "Bye!"
+		break
+	else
+
+	end
+end
 
