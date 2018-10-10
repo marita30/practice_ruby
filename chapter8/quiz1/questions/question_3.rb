@@ -36,3 +36,38 @@ people = [
   { "name" => "Will", "sport" => "cycling", "fruit" => "blackberry" }
 ]
 
+by_sport = {}
+by_fruit = {}
+
+people.each do |person|
+  name = person["name"]
+  sport = person["sport"]
+  fruit = person["fruit"]
+
+  if by_sport[sport] == nil
+    by_sport[sport] = [name]
+  else
+    by_sport[sport] << name
+  end
+  if by_fruit[fruit] == nil
+    by_fruit[fruit] = [name]
+  else
+    by_fruit[fruit] << name
+  end
+end
+
+puts "Enter category to choose people"
+category = gets.chomp.downcase
+
+if category == "sport"
+  by_sport.each do |a_sport, a_name|
+    puts a_sport
+    puts a_name
+  end
+
+elsif category == "fruit"
+  by_fruit.each do |a_sport, a_name|
+    puts a_sport
+    puts a_name
+  end
+end
