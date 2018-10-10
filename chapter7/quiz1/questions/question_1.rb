@@ -19,3 +19,6 @@
 # * Note: You can assume the user will only enter integers separated
 #   by commas with no spaces.
 
+puts "Please enter a list of numbers:" 
+input = gets.chomp 
+input.split(",").map(&:to_i).each { |x| puts "-" * x }
