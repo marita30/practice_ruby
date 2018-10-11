@@ -79,13 +79,13 @@ def score(arr)
   arr.each do |card| 
     total += cards[card]
   end
-  total
+  return total
 end
 
 def move
 	 while true do
 	   puts "Enter hit or stick?"
-	   turn = gets.chomp
+	   turn = gets.chomp.to_s
 	   if turn == 'hit' || turn == 'stick'
 	  		 break
 	  	end
