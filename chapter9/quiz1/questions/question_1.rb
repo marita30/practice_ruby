@@ -83,13 +83,11 @@ def score(arr)
 end
 
 def move
-	 while true do
-	   puts "Enter hit or stick?"
-	   turn = gets.chomp.to_s
-	   if turn == 'hit' || turn == 'stick'
-	  		 break
-	  	end
-	 end
+  while true do
+    puts "Enter hit or stick?"
+    turn = gets.chomp
+    break if turn == 'hit' || turn == 'stick'
+  end
   turn
 end
 
@@ -106,13 +104,11 @@ def run_game
   while true do
     turn = move
     if turn == 'stick'
-    		game_over(player_hand)
-    		break
-	elsif turn == 'hit'
-		 player_hand.push(random_card)
-		 puts 'Score so far: ' + score(player_hand).to_s
+      game_over(player_hand)
+      break
+    elsif turn == 'hit'
+      player_hand.push(random_card)
+      puts 'Score so far: ' + score(player_hand).to_s
     end
   end
 end
-
-run_game

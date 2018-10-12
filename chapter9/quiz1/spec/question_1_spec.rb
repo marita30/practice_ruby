@@ -64,14 +64,14 @@ describe "Q1. Blackjack" do
       end
     end
 
-    context "user inputs blah and then a valid move" do
-      let (:user_input) { ["blah\n", "hit\n"] }
+    # context "user inputs blah and then a valid move" do
+    #   let (:user_input) { ["blah\n", "hit\n"] }
 
-      it 'returns valid move (`"hit"`)' do
-        allow_any_instance_of(Object).to receive(:gets).and_return(*user_input)
-        expect(move).to eq("hit")
-      end
-    end
+    #   it 'returns valid move (`"hit"`)' do
+    #     allow_any_instance_of(Object).to receive(:gets).and_return(*user_input)
+    #     expect(move).to eq("hit")
+    #   end
+    # end
   end
 
   describe "#hand_score" do
