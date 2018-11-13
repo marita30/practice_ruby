@@ -6,7 +6,7 @@
 
 ## Setup
 
-1. On Monday of week 2 of the precourse, **fork** (not clone) this [mastery-quizzes repository](https://github.com/makersacademy/mastery-quizzes).
+1. **fork** (not clone) this [mastery-quizzes repository]
 
 2. Then clone **your** fork to your computer.  (Or clone it to Cloud9 if you're on Windows.)
 
