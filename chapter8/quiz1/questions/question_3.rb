@@ -26,3 +26,12 @@
 # Note: You can assume that, when asked for a category, the user will
 # only enter either `sport` or `fruit`.
 
+people = [
+  { "name" => "Mary", "sport" => "squash", "fruit" => "blackberry" },
+  { "name" => "Lauren", "sport" => "squash", "fruit" => "orange" },
+  { "name" => "Isla", "sport" => "weightlifting", "fruit" => "banana" },
+  { "name" => "Sam", "sport" => "cycling", "fruit" => "orange" },
+  { "name" => "Govind", "sport" => "squash", "fruit" => "banana" },
+  { "name" => "Awad", "sport" => "weightlifting", "fruit" => "kiwi" },
+  { "name" => "Will", "sport" => "cycling", "fruit" => "blackberry" }
+]
