@@ -7,21 +7,17 @@
 #     number is the result of `0 + 1`.
 # * `puts`es these numbers, one per line.
 
-First_number = 0
+first_number = 0
 
-Second_number = 1
+second_number = 1
 
 i = 1
 
-puts First_number
-puts Second_number
-
-#Inicio del while
+puts first_number
+puts second_number
+# Inicio del while
 while i <= 19
- 
-  First_number, Second_number = Second_number,First_number + Second_number
-  i = i + 1
-  
- end
-
-
+	 first_number, second_number = second_number, first_number + second_number
+	 puts second_number
+	 i += 1 
+end
