@@ -14,3 +14,4 @@
 #   $ ruby question_1.rb
 #   It is certain
 
+puts ['It is certain', 'Ask again later', 'It is decidedly so'].sample
