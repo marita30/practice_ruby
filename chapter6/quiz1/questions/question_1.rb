@@ -30,8 +30,9 @@
 i = 0
 numeros = []
 while i != "stop" do
-	puts "give me a number"
-	numeros << i.to_i
+		puts 'give me a number'
+		i = gets.chomp.downcase
+		numeros << i.to_i
 end
 total = 0
 numeros.each { |x| total = total + x }
