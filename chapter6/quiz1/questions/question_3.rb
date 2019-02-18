@@ -22,3 +22,21 @@
 #   the user input.  You shouldn't need to enter any input manually.
 #   If the tests hang when you run them, it probably means your code
 #   doesn't work correctly, yet.
+area = "passage"
+while input = gets.chomp.strip
+  break if input == "break"
+  if area == "passage" and input == "north"
+    puts "You are in a scary cave."
+    area = "cave"
+    input = 0
+  end
+  if area == "cave"
+    if input == "south"
+      puts "You are in a scary passage."
+      area = "passage"
+    elsif input == "north"
+      puts "You walk into sunlight."
+      break
+    end
+  end
+end
