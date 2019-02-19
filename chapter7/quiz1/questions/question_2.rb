@@ -50,5 +50,11 @@
 #   many groups they want to create.  You can assume the user will
 #   input integers for group numbers that exist when they are asked
 #   for the number of a group to print out.
-
-
+nombre = ""
+puts "give me the number of groups they want to create: "
+number = gets.chomp.to_i
+array = Array.new(number) {[]}
+while nombre =! "stop" do
+	puts "Give me a name: "
+	nombre = gets.chomp.to_s
+end
