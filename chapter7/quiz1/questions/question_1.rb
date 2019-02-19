@@ -17,4 +17,10 @@
 #   ```
 #
 # * Note: You can assume the user will only enter integers separated
-#   by commas with no spaces.
+puts "give me a list of numbers separated by commas: "
+input = gets.chomp
+numeros = input.split(",")
+numeros.each do |numeros|
+  puts "-" * numeros.to_i
+end
+
