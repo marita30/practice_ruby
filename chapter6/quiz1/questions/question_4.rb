@@ -39,7 +39,7 @@ loop do
   input = gets.chomp.strip
  if input == 'quit'
  	puts 'Bye!'
- 	break
+  break
 
  elsif player_location == 'hall' and input == 'look'
    puts 'You are standing in a hall with a marble floor. You see a door.'
