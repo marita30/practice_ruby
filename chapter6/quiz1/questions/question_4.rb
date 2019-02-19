@@ -33,4 +33,35 @@
 #   the user input.  You shouldn't need to enter any input manually.
 #   If the tests hang when you run them, it probably means your code
 #   doesn't work correctly, yet.
+player_location = "hall"
+loop do 
+	puts "enter your comand: "
+  input = gets.chomp.strip
+ if input == 'quit'
+ 	puts 'Bye!'
+ 	break
+
+ elsif player_location == 'hall' and input == 'look'
+   puts 'You are standing in a hall with a marble floor. You see a door.'
+   player_location = 'hall'
+
+ elsif player_location == 'hall' and input == 'north'
+   puts 'You have moved to the study.'
+   player_location = 'study'
+
+ elsif player_location == 'study' and input == 'look'
+   puts 'You are in a warm and cosy study. You see a safe. You see a desk.'
+
+ elsif player_location == 'study' and input == 'look at desk'
+   puts 'You see a piece of paper that reads,"The combination is: 2451"'
+
+ elsif player_location == 'study' and input == 'south'
+   puts 'moved to the hall.'
+   player_location = 'hall'
+
+ elsif player_location == 'study' and input == '2451'
+   puts 'You found the diamonds.  Pick them up and make your escape!'
+   break
+ end
+end
 
