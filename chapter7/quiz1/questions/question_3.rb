@@ -61,4 +61,33 @@
 #   neither
 #   You survived!
 #   ```
+position = 2
+move = 0
+river = "-----,--C--,CC-CC,CC-CC".split(",")
+river[move][position] = "P"
+puts river
+loop do
+  if move == 3
+    puts "You survived!"
+   break
+ end
+ river[move][position] = "-"
+ puts "Do you want to move: left, right or neither?"
+ user_input = gets.chomp.downcase
+ if user_input == "break"
+   break
+ elsif user_input == "left"
+   position -= 1
+ elsif user_input == "right"
+   position += 1
+ end
+ move += 1
+ if river[move][position] == "C"
+   puts "You were eaten."
+   break
+ else
+   river[move][position] = "P"
+ end
+ puts river
+end
 

@@ -54,7 +54,8 @@ nombre = ""
 puts "give me the number of groups they want to create: "
 number = gets.chomp.to_i
 array = Array.new(number) {[]}
+puts "give a name: "
 while nombre =! "stop" do
 	puts "Give me a name: "
-	nombre = gets.chomp.to_s
+	nombre1 = gets.chomp.to_s
 end
