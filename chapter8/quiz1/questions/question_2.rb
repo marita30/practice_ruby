@@ -19,6 +19,10 @@
 # Note: You can assume that, when asked for a category, the user will
 # only enter either `sport` or `fruit`.  The user might enter a
 # category value that no person has (e.g. `mango`).
+puts "enter what category to search: "
+cat = gets.chomp.downcase
+puts "enter what value to search for: "
+val = gets.chomp.downcase
 people = [
   { "name" => "Mary", "sport" => "squash", "fruit" => "blackberry" },
   { "name" => "Lauren", "sport" => "squash", "fruit" => "orange" },
@@ -28,3 +32,10 @@ people = [
   { "name" => "Awad", "sport" => "weightlifting", "fruit" => "kiwi" },
   { "name" => "Will", "sport" => "cycling", "fruit" => "blackberry" }
 ]
+
+people.each do |record| 
+	if record[cat] == val
+		puts record["name"]
+	end 
+end
+
